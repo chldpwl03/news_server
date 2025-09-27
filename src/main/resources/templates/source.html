@@ -3,7 +3,10 @@
 <head th:replace="~{layout :: head('Administrator')}">
 </head>
 
-<body>
+
+<body th:replace="~{layout :: base(~{::section})}">
+<section>
+<div>
     <h2>뉴스 발행처</h2>
     </div>
 <table class="table table-striped table-hover">
@@ -35,6 +38,8 @@
     </thead>
 
 </table>
+</section>
 </body>
+
 </html>
 

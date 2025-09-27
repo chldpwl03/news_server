@@ -3,8 +3,11 @@
 <head th:replace="~{layout :: head('Administrator')}">
 </head>
 
-<body>
-<div class="container my-5">
+<body th:replace="~{layout :: base(~{::section})}">
+
+
+<!--    -->
+    <section>
 <div>
     <h2>카테고리 목록</h2>
 </div>
@@ -30,7 +33,9 @@
             <input type="submit" class="btn btn-primary" value="저장">
 
         </form>
-    </div>
+
+<!--    -->
+    </section>
 </div>
 
 <div th:replace="~{layout :: bootstrap_script}"></div>

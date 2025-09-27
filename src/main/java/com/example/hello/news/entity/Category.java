@@ -15,7 +15,6 @@ import java.time.LocalDateTime;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-
 public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,7 +23,7 @@ public class Category {
     @Column(nullable = false,length = 50)
     private String name;
 
-    @Column(nullable = true,unique = false,length = 500)
+    @Column(length = 500)
     private String memo;
 
     @Column(name="created_at", updatable = false,insertable = false)
